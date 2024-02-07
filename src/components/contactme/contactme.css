@@ -1,5 +1,6 @@
 
 .contactmebody{
+  margin-top: 10rem;
   height:auto;
   background-position: center center;
   background-size: cover;
@@ -123,9 +124,11 @@ textarea{
   color:rgb(210, 206, 206);
 }
 .emailme h3{
+  color:white;
   margin:0px;
 }
 .callme h3{
+  color:white;
   margin:0px;
 }
 .copyright{
