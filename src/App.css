@@ -147,11 +147,13 @@ body::-webkit-scrollbar{
   text-align: center;
   margin-top: 50px;
   font-family: "Anton", sans-serif;
+
 }
 .aboutmeheading p{
   font-size: 50px;
   padding:10px;
   font-weight: 600;
+  color:white;
 }
 .aboutmecontentbox{
   height:auto;
@@ -326,4 +328,5 @@ body::-webkit-scrollbar{
   html{
     zoom: 60%;
   }
+  
 }
