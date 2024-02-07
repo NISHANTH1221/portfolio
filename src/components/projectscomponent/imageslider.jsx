@@ -39,6 +39,7 @@ function Imageslider({slides}){
         cursor:"pointer"
     }
     const projectdescriptionstyle={
+        color:"white",
         textAlign:"center",
         width:"100%",
         height:"auto",
