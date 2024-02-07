@@ -36,7 +36,7 @@ function App() {
   duration: 500,
   smooth: true,
 };
- const isMobile = window.innerWidth <= 768;
+ const isMobile = window.innerWidth <= 500;
   return (
     <>
       <div className='body'>
