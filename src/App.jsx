@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Contactme from './components/contactme/contactme';
 import {useTypewriter,cursor} from "react-simple-typewriter";
