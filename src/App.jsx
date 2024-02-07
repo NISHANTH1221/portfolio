@@ -2,6 +2,7 @@
 import './App.css';
 import Contactme from './components/contactme/contactme';
 import {useTypewriter,cursor} from "react-simple-typewriter";
+import { Link,animateScroll } from 'react-scroll';
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -30,11 +31,16 @@ function App() {
   deleteSpeed:80,
   delaySpeed:200
  })
+ const options = {
+  // Your options here, for example:
+  duration: 500,
+  smooth: true,
+};
  const isMobile = window.innerWidth <= 768;
   return (
     <>
       <div className='body'>
-            <div className="intro">
+            <div id="home" className="intro">
               <video src={videobg} autoPlay muted loop/>
               <div className='overlay'></div>
               <div className='introdetails'>
@@ -51,11 +57,52 @@ function App() {
             </div>
              {isMobile ? undefined :
                 <ul>
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Resume</li>
-                  <li>Portfolio</li>
-                  <li>Contact</li>
+                  <li>
+                    <Link
+                    to='home'
+                    smooth={true}
+                    offset={-55}
+                    duration={500}
+                    
+                    >
+                      Home
+                    </Link>
+                    </li>
+                  <li>
+                    <Link
+                    to='aboutme'
+                    smooth={true}
+                    offset={-55}
+                    duration={500}
+                    >
+                    About Me
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to='resume'
+                      smooth={true}
+                      offset={-55}
+                      duration={500}
+                      >
+                       Resume
+                      </Link>
+                  </li>
+                  <li>
+                      <Link
+                        to='projects'
+                        smooth={true}
+                        offset={-55}
+                        duration={500}
+                        >
+                        Projects
+                      </Link>
+                    </li>
+                  <li >
+                    <a onClick={()=>animateScroll.scrollToBottom(options)}>
+                    Contact
+                    </a> 
+                  </li>
                 </ul>
              }
               
@@ -74,7 +121,7 @@ function App() {
               </ul>
               <p>Follow me</p>
             </div>
-            <div className="aboutme">
+            <div id='aboutme' className="aboutme">
               <div className='aboutmeheading'>
               <p>About Me</p>
               </div>
@@ -96,7 +143,7 @@ function App() {
                       </div>
               </div> 
             </div>
-            <div className='resumesection'>
+            <div id="resume" className='resumesection'>
                <div className='resumeheading'>
                   <p>My Resume</p>
                </div>
@@ -259,8 +306,8 @@ function App() {
                       </div>
                  </div>
             </div>
-            <Projects />
-            <Contactme />
+            <Projects id="projects"/>
+            <Contactme id="contact"/>
       </div>
     </>
   )

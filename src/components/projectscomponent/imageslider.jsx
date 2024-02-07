@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./imageslider.css";
 function Imageslider({slides}){
-    const [imageIndex,setImageIndex]=useState(1);
+    const [imageIndex,setImageIndex]=useState(0);
     const [isHovering, setIsHovering] = useState(false);
 
     const handleMouseEnter = () => {
@@ -21,7 +21,6 @@ function Imageslider({slides}){
         backgroundSize:"contain", 
         backgroundRepeat:"no-Repeat",
         backgroundPosition:"center",
-        content: isHovering ? `"${slides[imageIndex].title}"` : '""',
     }
     // const imagehoverstyle={
     //     width:"85%",

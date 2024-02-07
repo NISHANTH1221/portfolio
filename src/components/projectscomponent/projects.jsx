@@ -13,7 +13,7 @@ function Projects(){
         },
         {
             url:"/image-3.jpeg",
-            title:"Under construction"
+            title:"Working on better AI projects"
         }
     ];
     return(

@@ -38,7 +38,7 @@ body::-webkit-scrollbar{
  align-items: center;
 }
 
-.header ul li{
+.header ul li {
   padding:0px;
   margin:0px;
   width:auto;
@@ -46,7 +46,10 @@ body::-webkit-scrollbar{
   margin-left:2em;
   position: relative;
 }
-.header ul li:hover{
+.header ul li a{
+  color:white;
+}
+.header ul li :hover{
   color:rgb(206,31,30);
   transition: 50ms;
   cursor: pointer;
