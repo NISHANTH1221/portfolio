@@ -113,12 +113,14 @@ body::-webkit-scrollbar{
   padding:0px;
 }
 .introdetails p{
+  color:white;
   font-size: 17px;
   color: rgb(206,31,30) ;
   margin:0px;
   padding:0px;
 }
 .introdetails p1{
+  color:white;
   font-size: 60px;
   margin:0px;
   padding:0px;
@@ -168,6 +170,7 @@ body::-webkit-scrollbar{
   width:40em;
   height:auto;
   padding:10px;
+  color:white;
 }
 .resumesection{
   height:auto;
@@ -186,6 +189,7 @@ body::-webkit-scrollbar{
   font-size: 50px;
   padding:10px;
   font-weight: 600;
+  color:white;
 }
 .resumecontent{
   height:auto;
@@ -198,10 +202,12 @@ body::-webkit-scrollbar{
 .workheading p{
   font-family: "Anton", sans-serif;
   font-size:30px;
+  color:white;
 }
 .educationheading p{
   font-family: "Anton", sans-serif;
   font-size:30px;
+  color:white;
 }
 .workexperiencecontent{
   width:400px;
@@ -217,6 +223,7 @@ body::-webkit-scrollbar{
   display:flex;
   flex-direction: row;
   align-items: center;
+  color:white;
 }
 .circle{
   height:40px;
@@ -230,6 +237,7 @@ body::-webkit-scrollbar{
   display:flex;
   align-items: center;
   justify-content: center;
+  color:white;
 }
 .role{
   border-left-width:2px;
@@ -241,6 +249,7 @@ body::-webkit-scrollbar{
   padding-bottom: 30px;
 }
 .rolename p{
+  color:white;
   font-size:25px;
   margin:0px;
   font-family: "Anton", sans-serif;
@@ -249,6 +258,7 @@ body::-webkit-scrollbar{
   color:rgb(207,31,31);
 }
 .rolework{
+  color:white;
   padding-top:10px;
 }
 .technicalskills{
@@ -256,6 +266,7 @@ body::-webkit-scrollbar{
   width:100%;
 }
 .technicalskillsheading p{
+  color:white;
   font-family: "Anton", sans-serif;
   font-size: 30px;
   padding:20px;
@@ -308,9 +319,11 @@ body::-webkit-scrollbar{
 }
 @media only screen and (max-width: 768px) {
   .introdetails p1{
+    color:white;
     font-size: 40px;
   }
   .aboutmecontent p{
+    color:white;
     font-size: 15px;
     margin-left:40px;
     margin-right: 40px;
