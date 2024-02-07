@@ -22,18 +22,6 @@ function Imageslider({slides}){
         backgroundRepeat:"no-Repeat",
         backgroundPosition:"center",
     }
-    // const imagehoverstyle={
-    //     width:"85%",
-    //     height:"500px",
-    //     marginRight:"auto",
-    //     marginLeft:"auto",
-    //     borderRadius:"60px",
-    //     backgroundImage:`linear-gradient(to bottom,transparent,50% rgb(23,27,28)),url(${slides[imageIndex].url})`,
-    //     backgroundSize:"contain", 
-    //     backgroundRepeat:"no-Repeat",
-    //     backgroundPosition:"center",
-    //     content:`${slides[imageIndex].title}`, 
-    // }
     const lefticonstyles={
         fontSize:"2em",
         color:"white",
