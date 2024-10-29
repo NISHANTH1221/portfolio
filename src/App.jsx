@@ -12,6 +12,7 @@ const AboutSection =  React.lazy(()=>import('./components/aboutme/aboutme'));
 const TechnicalSection = React.lazy(()=>import('./components/technicalsection/technicalsection'));
 const Projects = React.lazy(()=>import("./components/projectscomponent/projects"));
 import Loading from './components/loading/loading';
+import ResumeComponent from './components/resumesection/resumesection';
 
 
 function App() {
@@ -132,82 +133,8 @@ const MainContent = () =>{
                 <p>Follow me</p>
               </div>
 
-              <AboutSection />
-              
-              <div id="resume" className='resumesection'>
-                <div className='resumeheading'>
-                    <p>My Resume</p>
-                </div>
-                <div className='resumecontent'>
-                  <div className='workexperiencecontent'>
-                    <div className='workheading'>
-                        <p>Experience</p>
-                    </div>
-                    <div className='workyear'>
-                          <div className='circle'>1</div>
-                          <div>
-                              <p>
-                              Jun 2023- Nov 2023
-                              </p>
-                          </div>
-                      
-                    </div>
-                    <div className='role'>
-                        <div className='rolename'>
-                          <p>Web Developer Intern</p>
-                        </div>
-                        <div className='companyname'>
-                          Algomatix Technologies Pvt Ltd
-                        </div>
-                        <div className='rolework'>
-                          <p1>I've created a website which will be used by the company to rent out warehouse's space under their command</p1>
-                        </div>
-                    </div>
-                  </div>
-                  <div className='educationcontent'>
-                      <div className='educationheading'>
-                          <p>Education</p>
-                      </div>
-                      <div className='workyear'>
-                          <div className='circle'>1</div>
-                          <div>
-                              <p>
-                              2021-2025
-                              </p>
-                          </div>
-                      
-                    </div>
-                    <div className='role'>
-                        <div className='rolename'>
-                          <p>Electronics and Communication Engineering</p>
-                        </div>
-                        <div className='companyname'>
-                          National Institute of Technology, Delhi
-                        </div>
-                        <div className='rolework'>
-                          <p1>CGPA : 8.08</p1>
-                        </div>
-                    </div>
-                    <div className='workyear'>
-                          <div className='circle'>2</div>
-                          <div>
-                              <p>
-                              2023-2025
-                              </p>
-                          </div>
-                      
-                    </div>
-                    <div className='role'>
-                        <div className='rolename'>
-                          <p>AI and ML (Minor Degree)</p>
-                        </div>
-                        <div className='companyname'>
-                          <p>National Institute of Technology,Delhi</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <AboutSection id="about"/>
+              <ResumeComponent id="resume"/>
               <TechnicalSection />
               <Projects id="projects"/>
               <Contactme id="contact"/>
