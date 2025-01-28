@@ -24,7 +24,7 @@ function Contactme(){
                 </div>
                 <div className="callme">
                     <h3>CALL ME</h3>
-                    <p>+91 9959521587</p>
+                    <p>+91 99XX5XX5XX</p>
                 </div>
             </div>
             <div className="copyright">
